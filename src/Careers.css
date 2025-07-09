@@ -1,0 +1,239 @@
+/* General Styles */
+.careers-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .careers-page .container {
+    max-width: 1oovw;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .careers-page h1, .careers-page h2,.careers-page h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2c3e50;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .careers-page h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .careers-page h2 {
+    font-size: 2.2em;
+    margin-bottom: 25px;
+  }
+  
+  .careers-page h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+  
+  .careers-page .bg-light {
+    background-color: #f9f9f9;
+  }
+  
+  .careers-page a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .careers-page a:hover {
+    color: #0056b3;
+  }
+  
+  /* Hero Section (Full Width) */
+  .careers-page .careers-hero {
+    background-color: #f0f8ff; /* Light background color */
+    padding: 100px 20px;
+    text-align: center;
+    width: 100vw; /* Full width */
+  }
+  
+  .careers-page .careers-hero .container {
+    max-width: 960px; /* Slightly narrower for hero text */
+  }
+  
+  .careers-page .careers-hero h1 {
+    font-size: 3.5em;
+  }
+  
+  .careers-page .careers-hero p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 700px;
+    margin: 20px auto;
+  }
+  
+  /* Why Work With Us Section */
+  .careers-page .why-work-with-us {
+    padding: 80px 0;
+    width: 100%; /* Full width */
+  }
+  
+  .careers-page .why-work-with-us .container {
+    max-width: 960px;
+  }
+  
+  .careers-page .why-work-with-us h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .careers-page .why-work-with-us ul {
+    list-style: none;
+    padding-left: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .careers-page .why-work-with-us li {
+    padding-left: 25px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .careers-page .why-work-with-us li strong {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .careers-page .why-work-with-us li::before {
+    content: '•';
+    color: #007bff;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 1.5em;
+  }
+  
+  /* Open Positions Section (Full Width, Light Background) */
+  .careers-page .open-positions {
+    padding: 80px 0;
+    width: 100%; /* Full width */
+  }
+  
+  .careers-page .open-positions .container {
+    max-width: 960px;
+  }
+  
+  .careers-page .open-positions h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .careers-page .position-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .careers-page .position-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  /* Apply Now Section (Full Width) */
+  .careers-page .apply-now {
+    padding: 80px 0;
+    text-align: center;
+    width: 100%; /* Full width */
+    background-color: #e0f2f7; /* Another light background */
+  }
+  
+  .careers-page .apply-now .container {
+    max-width: 800px;
+  }
+  
+  .careers-page .apply-now h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .careers-page .apply-now p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .careers-page .apply-now .quote {
+    font-style: italic;
+    color: #777;
+    margin: 15px auto;
+    max-width: 600px;
+    padding: 10px;
+    border-left: 3px solid #007bff;
+    text-align: left;
+  }
+  
+  
+  /* Media Queries for Responsiveness (Adjust container widths for smaller screens) */
+  @media (max-width: 992px) {
+    .careers-page .container {
+      max-width: 768px;
+    }
+  
+    .careers-page .careers-hero .container {
+      max-width: 768px;
+    }
+  
+    .careers-page .why-work-with-us .container {
+      max-width: 768px;
+    }
+  
+    .careers-page .open-positions .container {
+      max-width: 768px;
+    }
+  
+    .careers-page .apply-now .container {
+      max-width: 768px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .careers-page .container {
+      padding: 30px 15px;
+    }
+  
+    .careers-page h1 {
+      font-size: 3em;
+    }
+  
+    .careers-page h2 {
+      font-size: 2em;
+    }
+  
+    .careers-page .careers-hero {
+      padding: 80px 15px;
+    }
+  
+    .careers-page .careers-hero h1 {
+      font-size: 3em;
+    }
+  
+    .careers-page .careers-hero p {
+      font-size: 1.1em;
+    }
+  
+    .careers-page .why-work-with-us ul {
+      padding-left: 15px;
+    }
+  
+    .careers-page .why-work-with-us li {
+      padding-left: 20px;
+    }
+  
+    .careers-page .open-positions .position-card {
+      padding: 20px;
+    }
+  }

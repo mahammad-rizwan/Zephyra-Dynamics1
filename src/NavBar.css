@@ -1,0 +1,135 @@
+/* NavBar.css */
+
+/* Base Styles */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.98);
+  padding: 1rem 5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Left Section (MenuBar + Logo) */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* MenuBar Styles */
+.menu-bar {
+  /* Add your MenuBar specific styles here */
+  cursor: pointer;
+}
+
+/* Logo Styles */
+.logo {
+  height: 2.5rem;
+  width: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2c3e50;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.nav-links li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #1a2980, #26d0ce);
+  transition: width 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #1a2980;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+  .nav-bar {
+      padding: 1rem 3rem;
+  }
+  
+  .nav-links {
+      gap: 2rem;
+  }
+  
+  .nav-left {
+      gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+      padding: 1rem 2rem;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  .nav-left {
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+  }
+  
+  .nav-links {
+      width: 100%;
+      justify-content: space-between;
+      gap: 1rem;
+  }
+  
+  .nav-links li {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-bar {
+      padding: 1rem;
+  }
+  
+  .nav-links li {
+      font-size: 0.8rem;
+  }
+  
+  .logo {
+      height: 2rem;
+  }
+}

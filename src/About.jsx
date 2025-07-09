@@ -1,6 +1,10 @@
 import React from 'react';
 import './About.css';
 import { FaLinkedin, FaRocket, FaCalendarAlt, FaUserTie } from 'react-icons/fa';
+import sadiqImage from './assets/images/sadiq.jpg';
+import suhanaImage from './assets/images/suhana.jpg';
+import asimImage from './assets/images/asim.jpg';
+
 
 
 const teamMembers = [
@@ -8,21 +12,21 @@ const teamMembers = [
     name: 'Sadiq Ali Mir',
     role: 'Co-Founder & Technical Lead',
     desc: 'Final-year Aerospace Engineering student with deep expertise in aerodynamics and electric propulsion. Spearheads the technical design of our innovative propulsion system.',
-    img: '/src/assets/images/sadiq.jpg', // Replace with actual image path
+    img: sadiqImage, // Replace with actual image path
     link: 'https://www.linkedin.com/in/sadiqalimir?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
   },
   {
     name: 'Suhana Arsh',
     role: 'Co-Founder & Design Lead',
     desc: 'Final-year Aerospace Engineering student specializing in aircraft structures and systems integration. Oversees aircraft design and ensures seamless coordination across development phases.',
-    img: '/src/assets/images/suhana.jpg', // Replace with actual image path
+    img: suhanaImage, // Replace with actual image path
     link: 'https://www.linkedin.com/in/suhanaarsh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
   },
   {
     name: 'Aasim Baqir',
     role: 'Media Head & Manager',
     desc: 'Final-year Aerospace Engineering student specializing in aircraft structures and systems integration. Oversees aircraft design and ensures seamless coordination across development phases.',
-    img: '/src/assets/images/asim.jpg', // Replace with actual image path
+    img: asimImage, // Replace with actual image path
     link: 'https://www.linkedin.com/in/aasim-asgar-5ba47a252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
   }
 ];

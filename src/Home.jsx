@@ -4,6 +4,14 @@ import { GiProgression } from "react-icons/gi";
 import "./Home.css";
 import { useNavigate } from 'react-router-dom';
 
+
+
+import eVOLT  from './assets/images/eVOLT.png';
+import expert1  from './assets/images/eVOLT.png';
+import expert2 from './assets/images/eVOLT.png';
+import expert3 from './assets/images/eVOLT.png';
+import zephraVideo from './assets/images/zephyra_video.mp4';
+
 function Home() {
   const navigate = useNavigate();
   return (
@@ -19,7 +27,7 @@ function Home() {
             muted 
             playsInline
           >
-            <source src="/src/assets/images/zephyra_video.mp4" type="video/mp4" />
+            <source src={zephraVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="video-overlay"></div>
@@ -41,7 +49,7 @@ function Home() {
       <section className="product-section">
         <div className="section-container">
           <div className="product-image-container">
-            <img src="/src/assets/images/eVOLT.png" alt="Jetson ONE eVTOL" className="product-image" />
+            <img src={eVOLT} alt="Jetson ONE eVTOL" className="product-image" />
           </div>
           <div className="product-content">
             <h2 className="section-title">Jetson ONE <span className="highlight">eVTOL</span></h2>
@@ -148,7 +156,7 @@ function Home() {
                 "Zephyra Dynamics represents the future of urban air mobility with their innovative approach to eVTOL technology."
               </p>
               <div className="testimonial-author">
-                <img src="/src/assets/images/expert1.jpg" alt="Dr. Aisha Khan" className="author-image" />
+                <img src={expert1} alt="Dr. Aisha Khan" className="author-image" />
                 <div>
                   <h4>Dr. Aisha Khan</h4>
                   <p>Director, Aerospace Research Institute</p>
@@ -162,7 +170,7 @@ function Home() {
                 "The Jetson ONE has the potential to revolutionize transportation in mountainous regions like Kashmir."
               </p>
               <div className="testimonial-author">
-                <img src="/src/assets/images/expert2.jpg" alt="Prof. Rajiv Menon" className="author-image" />
+                <img src={expert2} alt="Prof. Rajiv Menon" className="author-image" />
                 <div>
                   <h4>Prof. Rajiv Menon</h4>
                   <p>Chair, Urban Mobility Forum</p>
@@ -176,7 +184,7 @@ function Home() {
                 "Zephyra's focus on sustainable aviation aligns perfectly with global environmental goals."
               </p>
               <div className="testimonial-author">
-                <img src="/src/assets/images/expert3.jpg" alt="Lisa Zhang" className="author-image" />
+                <img src={expert3} alt="Lisa Zhang" className="author-image" />
                 <div>
                   <h4>Lisa Zhang</h4>
                   <p>CEO, GreenTech Ventures</p>

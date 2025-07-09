@@ -4,6 +4,9 @@ import './Footer.css';
 import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { SiX } from 'react-icons/si';
 
+import zephraLogo from './assets/images/zephyra_logo.png';
+
+
 const Footer = () => {
 
   const scrollToTop = () => {
@@ -18,7 +21,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section logo-section">
           <Link to="/" onClick={scrollToTop} >
-            <img src="/src/assets/images/zephyra_logo.png" alt="Zephyra Dynamics Logo" className="footer-logo" />
+            <img src={zephraLogo} alt="Zephyra Dynamics Logo" className="footer-logo" />
           </Link>
           <p className="company-description">Zephyra Dynamics is at the forefront of designing and developing electric vertical takeoff and landing (eVTOL) aircraft to address the pressing need for sustainable, efficient, and accessible air transportation.</p>
           <p className="copyright">&copy; {new Date().getFullYear()} Zephyra Dynamics. All rights reserved.</p>

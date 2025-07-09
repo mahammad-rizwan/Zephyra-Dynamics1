@@ -1,12 +1,18 @@
 import './TechnologyPage.css';
-import evtolImage from '/src/assets/images/eVOLT.png'; // Replace with your eVTOL image
-import silentFlightIcon from '/src/assets/images/eVOLT.png'; // Replace with your icons
-import easyAccessIcon from '/src/assets/images/eVOLT.png';
-import sustainableIcon from '/src/assets/images/eVOLT.png';
-import commuteIcon from '/src/assets/images/eVOLT.png';
-import personalIcon from '/src/assets/images/eVOLT.png';
-import emergencyIcon from '/src/assets/images/eVOLT.png';
 
+import evtolImage from './assets/images/eVOLT.png'; // Replace with your eVTOL image
+import silentFlightIcon from './assets/images/eVOLT.png'; // Replace with your icons
+import easyAccessIcon from './assets/images/eVOLT.png';
+import sustainableIcon from './assets/images/eVOLT.png';
+import commuteIcon from './assets/images/eVOLT.png';
+import personalIcon from './assets/images/eVOLT.png';
+import emergencyIcon from './assets/images/eVOLT.png';
+
+
+
+
+
+import zephraLogo from './assets/images/zephyra_logo.png';
 
 
 const TechnologyPage = () => {

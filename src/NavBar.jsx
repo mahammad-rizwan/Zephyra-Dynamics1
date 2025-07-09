@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import MenuBar from './MenuBar.jsx';
 import './NavBar.css';
+import zephraLogo from './assets/images/zephyra_logo.png';
 
 const NavBar = () => {
     const scrollToTop = () => {
@@ -16,7 +17,7 @@ const NavBar = () => {
                 <div className="nav-left">
                     <MenuBar className="menu-bar"/>
                     <Link  to="/" onClick={scrollToTop}>
-                        <img src="/src/assets/images/zephyra_logo.png" alt="Zephra Logo" className="logo" />
+                        <img src={zephraLogo} alt="Zephra Logo" className="logo" />
                     </Link>
                 </div>
                 <ul className="nav-links">
